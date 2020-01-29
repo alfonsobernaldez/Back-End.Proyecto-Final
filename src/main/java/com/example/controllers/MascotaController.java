@@ -4,8 +4,8 @@ package com.example.controllers;
 import com.example.models.Mascota;
 import com.example.services.MascotaService;
 import java.util.List;
-
 import org.springframework.beans.factory.annotation.Autowired;
+
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -44,7 +44,7 @@ public class MascotaController {
         
         return service.mascotaUnico(id);
     }
-    @PutMapping (path={"/users/{id}"})
+    @PutMapping (path={"/mascotas/{id}"})
     public Mascota editar(@RequestBody Mascota m, @PathVariable("id") int id){
             m.setId(id);
     return service.editarMascota(m);
