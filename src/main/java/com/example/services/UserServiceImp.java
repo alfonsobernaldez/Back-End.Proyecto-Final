@@ -26,6 +26,7 @@ public class UserServiceImp implements UserService{
 
     @Override
     public User altaUser(User u) {
+        
         return repositorio.save(u); //To change body of generated methods, choose Tools | Templates.
     }
 
